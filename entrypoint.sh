@@ -1,7 +1,7 @@
 #!/bin/sh
 
-$GITHUB_TOKEN=$1
-$GIPHY_API_KEY=$2
+GITHUB_TOKEN=$1
+GIPHY_API_KEY=$2
 
 pull_request_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
 echo PR Number - $pull_request_number
