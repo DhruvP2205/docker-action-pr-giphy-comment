@@ -20,4 +20,4 @@ comment_response=$(curl -L \
   https://api.github.com/repos/$GITHUB_REPOSITORY/issues/$pull_request_number/comments \
   -d "{\"body\":\"### PR - #$pull_request_number .\n ### Thank You for this contribution! \n ![GIF]($gif_url)\"}")
 
-comment_url = $(echo "$comment_response" | jq --raw-output .html_url)
+comment_url=$(echo "$comment_response" | jq --raw-output .html_url)
