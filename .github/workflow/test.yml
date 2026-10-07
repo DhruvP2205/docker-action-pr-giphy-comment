@@ -2,7 +2,7 @@ name: "Test the Custom Docker Action"
 
 on:
   pull_request:
-    type:
+    types:
       - opened
 
 jobs:
