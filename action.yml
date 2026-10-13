@@ -1,5 +1,9 @@
-name: "GIPHY PR comment"
+name: "beTheNoob GIPHY PR comment Docker Action"
 description: "Add a GIPHY GIF comment to new PULL Requests"
+
+branding:
+  icon: "zap"
+  color: "blue"
 
 inputs:
   github-token:
